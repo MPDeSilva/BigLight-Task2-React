@@ -1,0 +1,12 @@
+@use './_tokens' as tokens;
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: tokens.$brand; background: #fff; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.sectionTitle { font-size: 1.5rem; margin: 2rem 0 1rem; }
+.btn { display:inline-block; padding: 10px 16px; background:tokens.$brand; color:tokens.$light; border-radius:tokens.$radius; box-shadow:tokens.$shadow; }
+.btnLight { background:tokens.$light; color:tokens.$brand; border:1px solid tokens.$brand; }
+.btnGhost { background:transparent; border:1px solid tokens.$brand; color:tokens.$brand; }
+.srOnly { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }

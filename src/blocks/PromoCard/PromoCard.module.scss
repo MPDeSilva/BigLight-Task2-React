@@ -1,0 +1,6 @@
+@import '@/styles/_tokens.scss';
+.card { position:relative; overflow:hidden; border-radius:$radius; background:#fff; box-shadow:$shadow; }
+.img { width:100%; height:260px; object-fit:cover; display:block; }
+.content { padding:12px; }
+.title { font-size: 1.1rem; margin:.25rem 0; }
+.link { color:$brand; text-decoration:underline; }

@@ -1,0 +1,9 @@
+@use '@/styles/_tokens' as tokens;
+
+.grid { display:grid; grid-template-columns:1fr; gap:16px; margin: 2rem 0; margin-top: 2rem; padding-top: 2rem !important; }
+@media (min-width: tokens.$bp-md) { .grid { grid-template-columns: repeat(3, 1fr); } }
+.card { position:relative; overflow:hidden; border-radius:tokens.$radius; background:#fff; box-shadow:tokens.$shadow; }
+.img { width:100%; height:260px; object-fit:cover; display:block; }
+.content { padding:12px; }
+.title { font-size: 1.1rem; margin:.25rem 0; }
+.link { color:tokens.$brand; text-decoration:underline; }
